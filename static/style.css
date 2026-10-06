@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Der komplette Hintergrundbildschirm */
+body {
+    background-color: #e9ecef; /* Ein sanftes Grau */
+    height: 100vh; /* vh = viewport height. Das Element ist 100% der Bildschirmhöhe hoch */
+    
+    /* Hier ist das pures Flexbox-Magie, um ALLES exakt in die Mitte zu zentrieren: */
+    display: flex;
+    justify-content: center; /* Waagerecht zentrieren */
+    align-items: center;     /* Senkrecht zentrieren */
+}
+
+/* 3. Wir bauen unsere eigene "Card" (wie bei Bootstrap) */
+.meine-karte {
+    background-color: white;
+    padding: 40px; /* Innenabstand */
+    border-radius: 12px; /* Abgerundete Ecken */
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1); /* Ein weicher Schatten */
+    text-align: center;
+}
+
+/* 4. Abstand nach unten für die Überschrift (wie mb-4) */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 5. Wir bauen unseren eigenen Button */
+.mein-cooler-button {
+    display: inline-block;
+    margin-top: 15px; /* Abstand nach oben (mt-3) */
+    padding: 10px 25px;
+    background-color: #0d6efd; /* Bootstrap-Blau */
+    color: white;
+    text-decoration: none; /* Entfernt den hässlichen Unterstrich bei Links */
+    border-radius: 6px;
+    transition: background-color 0.3s ease; /* Macht eine weiche Animation! */
+}
+
+/* Das passiert, wenn man mit der Maus über den Button fährt (Hover-Effekt) */
+.mein-cooler-button:hover {
+    background-color: #0b5ed7; /* Etwas dunkleres Blau */
+}
+
+.untertitel {
+    margin-bottom: 30px; /* Schiebt die bunte Liste weiter nach unten */
+    color: #666; /* Bonus: Macht den Text vielleicht noch ein schönes, sanftes Grau */
+}
+
+/* 1. die alte liste komplett unsichtbar machen und zur flexbox umbauen */
+.meine-bunte-liste {
+    list-style-type: none; /* Entfernt die Standard-Punkte */
+    padding: 0;
+    display: flex; /* Macht die Liste zu einer Flexbox */
+    flex-direction: column; /* Elemente untereinander anordnen */
+    gap: 20px; /* Abstand zwischen den Listenelementen */
+}
+
+/* 2. das Grundgerüst für Alle Buttons (Form, Schrift, Abstände) */
+.listen-button {
+    display: inline-flex; /* Lässt uns Icon und Text nebeneinander anordnen */
+    align-items: center; /* Zentriert Icon und Text vertikal - auf einer Höhe */
+    gap: 10px; /* Abstand zwischen Icon und Text */
+
+    padding: 12px 20px;
+    text-decoration: none; /* Entfernt den hässlichen Unterstrich bei Links */
+    color: white;
+    border-radius: 8px; /* Schöne abgerundete Ecken */
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Für die Hover-Animation */
+}
+
+
+/* 3. Cooler 3D-Effekt, wenn mat mit der Maus über den Button fährt */
+.listen-button:hover {
+    transform: translateY(-3px); /* Hebt den Button leicht an */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Fügt einen Schatten hinzu */
+}
+
+/* 4. Spezial-Farben für jeden einzelnen Button */
+.btn-rechner {
+    background-color: #28a745; /* Ein sattes Grün */
+}
+
+.btn-seite1 {
+    background-color: #17a2b8; /* Ein frisches Türkis */
+}
+
+.btn-bootstrap {
+    background-color: #6f42c1; /* Das offizielle Bootstrap-Lila */
+}
+
+.btn-css-training {
+    background-color: #fd7e14; /* Ein kräftiges Orange */
+}
+
+.btn-ueber-mich {
+    background-color: #ea07ff; /* Ein warmes Gelb */
+}
+
+label {
+    display: block;       /* Das zwingt das nachfolgende Eingabefeld automatisch in die nächste Zeile */
+    margin-bottom: 5px;   /* Etwas Luft nach unten */
+    font-weight: bold;
+}
+
+.mein-eingabefeld {
+    width: 100%;          /* Das Feld dehnt sich jetzt wunderschön über die ganze Breite der weißen Karte aus */
+    box-sizing: border-box; /* Verhindert, dass Ränder das Feld breiter als 100% machen */
+    padding: 10px;        /* Macht das Feld innen etwas höher und schöner */
+}
+
+.text-zentriert {
+    text-align: center;
+}

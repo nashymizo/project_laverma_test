@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Training</title>
+    <!-- Wir nutzen dieselbe CSS-Datei -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    
+    <div class="meine-karte">
+        <h1>Mein Formular-Training</h1>
+        <p class="untertitel">Hier üben wir Eingabefelder!</p>
+        
+        <!-- Das HTML-Formular -->
+        <form>
+            <div class="label">
+                <label>Benutzername:</label>
+                <!-- Hier ist das ungestylte Eingabefeld (mittlerweile, gestylt) -->
+                <input type="text"  class="mein-eingabefeld" placeholder="Bitte Namen eingeben...">
+            </div>
+            
+            <div class="label">
+                <label>Passwort:</label>
+                <!-- Hier ist das ungestylte Eingabefeld -->
+                <input type="password" class="mein-eingabefeld" placeholder="Bitte Passwort eingeben...">
+            </div>
+            <!-- Wir recyclen einfach deinen grünen Button! -->
+            <button type="button" style="margin-top: 20px;" class="listen-button btn-rechner text-zentriert">Daten absenden</button>
+        </form>
+
+        <br><br>
+        <a href="/" style="text-align: center;" class="listen-button btn-seite1">🏠 Zurück zur Startseite</a>
+
+    </div>
+
+</body>
+</html>

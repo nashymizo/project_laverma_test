@@ -1,24 +1,39 @@
-    <!DOCTYPE html>
-    <html>
-    <head><title>Startseite</title></head>
-    <body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startseite</title>
+    <!-- Die Verbindung zur CSS-Datei -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    
+    <!-- HIER IST DER TRICK: Diese Karte umschließt jetzt alles! -->
+    <div class="meine-karte">
+        
         <h1>Willkommen auf meiner ersten Web-App!</h1>
-        <p>Was möchtest du tun?</p>
-        <ul>
-            <!-- Der Link zur Eingabemaske -->
-            <li><a href="/rechner">Zum Additions-Rechner wechseln</a></li>
-        </ul>
-        <p>Oder du kannst auch direkt auf Seite 1 gehen:</p>
-        <ul>
-            <li><a href="/seite1">Gehe zu Seite 1</a></li>
-        </ul>
-        <p>Oder du kannst auch direkt auf die Bootstrap-Seite gehen:</p>
-        <ul>
-            <li><a href="/bootstrap">Gehe zu Bootstrap-Seite</a></li>
+        <p class="untertitel">Was möchtest du tun?</p>
+        
+        <ul class="meine-bunte-liste">
+            <li>
+                <a href="/rechner" class="listen-button btn-rechner">🧮 Zum Additions-Rechner</a>
+            </li>
+            <li>
+                <a href="/seite1" class="listen-button btn-seite1">📄 Gehe zu Seite 1</a>
+            </li>
+            <li>
+                <a href="/bootstrap" class="listen-button btn-bootstrap">🚀 Gehe zu Bootstrap</a>
+            </li>
+            
+            <!-- test, selbst -->
+            <li>
+                <a href="/ueberMich" class="listen-button btn-ueber-mich">👤 Gehe zu Über Mich</a>
+            </li>
+            <li>
+                <a href="/css-training" class="listen-button btn-css-training">🎨 Gehe zu CSS-Training</a>
+            </li>
         </ul>
 
-        <p>Oder du kannst auch direkt auf die Über Mich-Seite gehen:</p>
-        <ul>
-            <li><a href="/ueberMich">Gehe zu Über Mich</a></li>
-        </ul>
-    </body>
+    </div>
+
+</body>
+</html>

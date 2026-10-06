@@ -1,8 +1,13 @@
 from fastapi import FastAPI, Request
 from fastapi.templating import Jinja2Templates
+from fastapi.staticfiles import StaticFiles # <-- Import für statische Dateien
+
 
 # Wir starten unsere webanwendung mit FastAPI
 app = FastAPI()
+
+# NEU: wir geben den static-ordner an, damit FastAPI weiß, wo es die statischen Dateien (CSS, JS, Bilder) findet
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Wir sagen FastAPI, dass wir Jinja2 als Template-Engine verwenden und die Templates im Ordner "templates" liegen
 templates = Jinja2Templates(directory="templates")
@@ -44,3 +49,7 @@ def zeige_bootstrap(request: Request):
 @app.get("/ueberMich")
 def zeige_ueber_mich(request: Request):
     return templates.TemplateResponse(request, "ueberMich.html")
+
+@app.get("/css-training")
+def zeige_css_training(request: Request):
+    return templates.TemplateResponse(request, "css_training.html")
