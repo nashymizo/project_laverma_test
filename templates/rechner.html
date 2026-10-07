@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+
+<!-- ALT!!!!! -->
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Mein Web-Rechner</title>
@@ -20,4 +22,51 @@
         <a href="/">🏠 Zur Startseite</a>
     </div>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Mein Web-Rechner</title>
+    
+    <!-- HIER FEHLTE DIE VERBINDUNG ZUM DESIGN! -->
+    <link rel="stylesheet" href="/static/style.css">
+    
+    <!-- Dein Emoji-Icon (optional) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>">
+</head>
+
+<body>
+<div class="meine-karte">
+    <h1>Additions-Rechner</h1>
+    
+    <!-- method="POST" versteckt die Daten aus der URL -->
+    <form method="POST" action="/rechner"   >
+        <div class="label-rechner">
+            <label>Zahl 1:</label>
+            <!-- WICHTIG: Das name-Attribut braucht dein Python-Code später! -->
+            <input type="number" name="zahl1" class="mein-eingabefeld" step="any" required autofocus>
+        </div>
+        
+        <div class="label-rechner">
+            <label>Zahl 2:</label>
+            <input type="number" name="zahl2" class="mein-eingabefeld" step="any" required>
+        </div>
+        
+        <!-- Wichtig: type="submit" feuert das Formular ab -->
+        <button type="submit" style="margin-top: 10px;" class="listen-button btn-rechner">Berechnen</button>
+    </form>
+
+    <!-- Dieser Block wird NUR angezeigt, wenn dein Python-Code ein 'ergebnis' mitschickt -->
+    {% if ergebnis is not none %}
+        <div style="margin-top: 20px; padding: 15px; background-color: #e9ecef; border-radius: 8px;">
+            <h2>Das Ergebnis ist: {{ ergebnis }}</h2>
+        </div>
+    {% endif %}
+    
+    <br>
+    <a href="/" class="listen-button btn-seite1">🏠 Zurück zur Startseite</a>
+</body>
+</div>
 </html>
