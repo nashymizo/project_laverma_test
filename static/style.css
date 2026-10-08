@@ -119,3 +119,8 @@ label {
 .text-zentriert {
     text-align: center;
 }
+
+.label-rechner {
+    margin-bottom: 20px;
+    text-align: left;
+}
