@@ -10,7 +10,7 @@ function guessTheNumber() {
     if(numberToGuess == myNumber.value)  {
         headline.innerHTML = "Du hast gewonnen!!!👍";
         displayRange.innerHTML = "";
-    
+        
     }
 
     if(numberToGuess < myNumber.value) {
