@@ -1,6 +1,5 @@
 let numberToGuess = Math.round(Math.random() * 100);
 let tries = 0;
-alert(numberToGuess);
 
 function guessTheNumber() {
     
