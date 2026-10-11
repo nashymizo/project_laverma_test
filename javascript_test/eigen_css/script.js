@@ -10,9 +10,12 @@ function guessTheNumber(){
         head_id.innerHTML = "Du hast gewonnen 🥳";
     }
     if(numberRandom < input_id.value){
-        head_id.innerHTML = "Die Zahl ist zu groß"
+        head_id.innerHTML = "Die Zahl ist zu groß";
+    }
+    if(numberRandom > input_id.value){
+        head_id.innerHTML = "Die Zahl ist zu klein";
     }
     
 
-    input_id.value = ""
+    input_id.value = "";
 }
