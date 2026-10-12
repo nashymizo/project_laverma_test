@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Data</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container w-50 p-5 my-5 border text-center bg-secondary text-white" style="border-radius:32px; box-shadow: 10px 10px 20px 10px grey inset">
+        <h1>Compare Data</h1>
+        <p style="margin-top:12px">This programm helps to compare 2 files with each other to filter the similiar records</p>
+    </div>
+
+    <div class="card mx-auto w-50 p-5 my-5 border bg-secondary text-white" style="border-radius:32px; box-shadow: 10px 10px 20px 10px grey inset">
+        <div>
+            <h3 class="card-title text-center">Bitte hier die zu <code>bearbeitende</code> Dateien auswählen und hochladen.</h3>   
+        </div>
+        
+        <!-- Hier öffnet sich der card-body -->
+        <div class="card-body border bg-light p-5 my-5" style="box-shadow: 10px 10px 20px 10px grey inset">
+            <form id="form_id" class="text-center">
+                <label for="datei_eins">Datei 1 auswählen:</label>
+                <input type="file" id="datei_eins" name="uploaddatei_eins" accept=".txt">
+                
+                <p></p>
+
+                <label for="datei_zwei">Datei 2 auswählen:</label>
+                <input type="file" id="datei_zwei" name="uploaddatei_zwei" accept=".txt">
+
+                <p></p>
+
+                <button type="submit">Hochladen</button>
+            </form>
+        </div> <!-- Hier schließt sich der card-body -->
+
+    </div> <!-- Hier schließt sich die äußere Card -->
+    
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

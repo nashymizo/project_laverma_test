@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Der komplette Hintergrundbildschirm */
+body {
+    background-color: #e9ecef; /* Ein sanftes Grau */
+    height: 100vh; /* vh = viewport height. Das Element ist 100% der Bildschirmhöhe hoch */
+    
+    /* Hier ist das pures Flexbox-Magie, um ALLES exakt in die Mitte zu zentrieren: */
+    display: flex;
+    justify-content: center; /* Waagerecht zentrieren */
+    align-items: center;     /* Senkrecht zentrieren */
+}
+
+/* 3. Wir bauen unsere eigene "Card" (wie bei Bootstrap) */
+.meine-karte {
+    background-color: white;
+    padding: 40px; /* Innenabstand */
+    border-radius: 12px; /* Abgerundete Ecken */
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1); /* Ein weicher Schatten */
+    text-align: center;
+}
+
+/* 4. Abstand nach unten für die Überschrift (wie mb-4) */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.meine-karte p { font-size: 19px;}

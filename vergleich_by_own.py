@@ -1,7 +1,7 @@
 def extract_laverma_id(filepath):
     ids_laverma = set()
     # öffnet Datei
-    with open(filepath, 'r', encoding='latin-1') as file:
+    with open(filepath, 'r') as file:
         for line in file:
             # prüft ob nach strip(zeilenumbrüche) noch Zeichen übrig sind, wenn ja, wird nächste zeile ausgeführt
             if line.strip():
@@ -22,7 +22,7 @@ def extract_laverma_id(filepath):
 def extract_orgamax_id(filepath):
     ids_orgamax = set()
     # öffne Datei
-    with open(filepath, 'r', encoding='latin-1') as file:
+    with open(filepath, 'r') as file:
         for line in file:
             # prüft ob nach strip(zeilenumbrüche) noch Zeichen übrig sind, wenn ja, wird nächste zeile ausgeführt
             if line.strip():
@@ -84,3 +84,5 @@ x = 1
 for item in common_ids:
     print(f"{x}. - {item}")
     x += 1
+
+    # print(x + ". -" + item)

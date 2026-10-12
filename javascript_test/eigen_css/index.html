@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="../../static/style.css">
 </head>
 <body>
-    <div class="meine-karte">
+        <div class="meine-karte">
     
-        <h1 class="head_id" style="color: rgb(43, 43, 65)">Errate die Zahl zwischen 0 und 100</h1>
+        <h1 id="head_id" style="color: rgb(43, 43, 65)">Errate die Zahl zwischen 0 und 100</h1>
         
         <form onsubmit="guessTheNumber(); return false;">
         <input id="input_id" type="number" class="mein-eingabefeld" placeholder="Bitte gib eine Zahl ein...">
         <button class="listen-button" style="margin-top: 10px; color: rgb(43, 43, 65);">absenden</button>
         
+        <h2 id="id_try" style="margin-top: 10px;">Versuche: 0</h2>
         </form>
 
-        <h2 id="id_try" style="margin-top: 10px;">Versuche: 0</h2>
+        
         
     
     </div>
