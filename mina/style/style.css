@@ -32,3 +32,14 @@ h1 {
 }
 
 .meine-karte p { font-size: 19px;}
+
+.zahn-text {
+            /* Die Schriftart mit Fallback, falls Brush Script fehlt */
+            font-family: cursive;
+            
+            /* Der Cyan-Farbcode */
+            color: #00b0e6;
+            
+            /* Schriftgröße anpassen */
+            font-size: 32px; 
+}
