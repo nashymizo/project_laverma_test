@@ -46,7 +46,7 @@ formular.addEventListener('submit', function(event){
                 }
                 console.log("die sauberen IDs aus Datei 2:", nummern2)
 
-                // schickt jede einzelne zeile von nummer2 in die "myfunktion"
+                // schickt jede einzelne zeile von nummer2 in die "myfunction"
                 const gleiche_nummern = nummern2.filter(myfunction);
 
                 function myfunction(aktuelleNummer){
